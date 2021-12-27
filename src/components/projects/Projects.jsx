@@ -1,4 +1,5 @@
 import React from 'react';
+import './projects.css'
 import Card from 'react-bootstrap/Card'
 import readrs from '../../images/projectThumbnails/readrs.png'
 import boxitup from '../../images/projectThumbnails/boxitup.png'
@@ -7,9 +8,8 @@ import quiz from '../../images/projectThumbnails/quiz.png'
 const Projects = () => {
   return (
     <div className='project-list'>
-      <h1>Projects</h1>
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant='top' src={boxitup} />
+        <Card.Img variant='top' src={boxitup} className='card-img'/>
         <Card.Body>
           <Card.Title>Box It Up</Card.Title>
           <Card.Text>
@@ -18,7 +18,7 @@ const Projects = () => {
         </Card.Body>
       </Card>
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant='top' src={readrs} />
+        <Card.Img variant='top' src={readrs} className='card-img'/>
         <Card.Body>
           <Card.Title>Readrs</Card.Title>
           <Card.Text>
@@ -27,7 +27,7 @@ const Projects = () => {
         </Card.Body>
       </Card>
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant='top' src={quiz} />
+        <Card.Img variant='top' src={quiz} className='card-img'/>
         <Card.Body>
           <Card.Title>Quiz for the Nerds</Card.Title>
           <Card.Text>
