@@ -7,17 +7,19 @@ import Projects from './components/projects/Projects';
 
 function App() {
   return (
-    <>
-    <div className='landing'>
-      <p className="brand-statement">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit autem architecto eveniet quae minima excepturi eligendi commodi quisquam sequi voluptates?</p>
+    <div className='fullpage'>
+      <div className='landing'>
+        <p className="brand-statement">
+          I am a thoughtful and solutions-driven software developer, with a passion for creating enjoyable experiences for all. Through attention to detail and creative problem solving, I strive to find new and inventive ways of approaching every situation. Both routine and unusual occurrences bring out my best work, adapting to new situations with the same care I bring to the ordinary. My background in team-oriented organizations has allowed me to learn new skills and perspectives, and coworkers have seen my diligence and reliability in my work.
+        </p>
+      </div>
+      <div className='projects'>
+        <Projects />
+      </div>
+      <div className='contact'>
+        <Contact />
+      </div>
     </div>
-    <div className='projects'>
-      <Projects />
-    </div>
-    <div className='contact'>
-      <Contact />
-    </div>
-  </>
   )
 }
 

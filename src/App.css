@@ -1,11 +1,18 @@
-.landing {
-  height: 100vh;
+.fullpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-statement {
+  /* width: 700px; */
+  margin: 100px;
+  text-align: center;
 }
 
 .projects {
-  height: 100vh;
+  margin: 0 100px 100px 100px;
 }
 
 .contact {
-  height: 100vh;
+  margin-bottom: 100px;
 }
