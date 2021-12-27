@@ -1,0 +1,44 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.headshot-container {
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+.headshot {
+  width: 300px;
+}
+
+.contact-info {
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.contact-info > h2:first-child {
+  margin-top: 0px;
+}
+
+.contacts {
+  margin: auto;
+  align-content: space-between;
+}
+
+#li-logo {
+  width: 115px;
+}
+
+#gh-logo {
+  width: 100px;
+}
