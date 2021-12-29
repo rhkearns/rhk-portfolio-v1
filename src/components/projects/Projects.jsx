@@ -8,7 +8,7 @@ import quiz from '../../images/projectThumbnails/quiz.png'
 const Projects = () => {
   return (
     <div className='project-list'>
-      <Card style={{ width: '18rem' }}>
+      <Card className="card" style={{ width: '18rem' }}>
         <Card.Img variant='top' src={boxitup} className='card-img'/>
         <Card.Body>
           <Card.Title className="card-title">Box It Up</Card.Title>
@@ -17,7 +17,7 @@ const Projects = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card style={{ width: '18rem' }}>
+      <Card className="card" style={{ width: '18rem' }}>
         <Card.Img variant='top' src={readrs} className='card-img'/>
         <Card.Body>
           <Card.Title className="card-title">Readrs</Card.Title>
@@ -26,7 +26,7 @@ const Projects = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card style={{ width: '18rem' }}>
+      <Card className="card" style={{ width: '18rem' }}>
         <Card.Img variant='top' src={quiz} className='card-img'/>
         <Card.Body>
           <Card.Title className="card-title">Quiz for the Nerds</Card.Title>
