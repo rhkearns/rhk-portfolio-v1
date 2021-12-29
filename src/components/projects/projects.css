@@ -4,6 +4,15 @@
   flex-wrap: wrap;
 }
 
+.card-title {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+.card-text {
+  font-size: 1.4rem;
+}
+
 .card-img {
   padding: 10px;
   border-bottom: 1px solid black;

@@ -11,8 +11,8 @@ const Projects = () => {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={boxitup} className='card-img'/>
         <Card.Body>
-          <Card.Title>Box It Up</Card.Title>
-          <Card.Text>
+          <Card.Title className="card-title">Box It Up</Card.Title>
+          <Card.Text className="card-text">
             A full-stack CRUD app, using Python with the Django web framework, designed to help movers keep track of their many boxes.
           </Card.Text>
         </Card.Body>
@@ -20,8 +20,8 @@ const Projects = () => {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={readrs} className='card-img'/>
         <Card.Body>
-          <Card.Title>Readrs</Card.Title>
-          <Card.Text>
+          <Card.Title className="card-title">Readrs</Card.Title>
+          <Card.Text className="card-text">
             A full-stack CRUD app, using the MEN Stack, designed to let book lovers sort and catagorize their books.
           </Card.Text>
         </Card.Body>
@@ -29,8 +29,8 @@ const Projects = () => {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={quiz} className='card-img'/>
         <Card.Body>
-          <Card.Title>Quiz for the Nerds</Card.Title>
-          <Card.Text>
+          <Card.Title className="card-title">Quiz for the Nerds</Card.Title>
+          <Card.Text className="card-text">
             A simple quiz game designed to test nerds on their knowledge of the most popular franchises, using vanilla JavaScript.
           </Card.Text>
         </Card.Body>
