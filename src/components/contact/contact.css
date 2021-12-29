@@ -14,6 +14,10 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  background-color: rgba(255, 255, 255, .795);
+  border: 2px solid darkcyan;
+  border-radius: 25px;
+  padding: 25px;
 }
 
 #li-logo {
@@ -37,7 +41,7 @@
   .contact-section {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 10% 40% 40% 10%;
     justify-content: center;
     text-align: center;
   }
@@ -59,6 +63,14 @@
     justify-self: center;
     grid-gap: 50px;
   }
-  
-  
+}
+
+@media only screen and (min-width: 1420px) {
+  .contact-section {
+    grid-template-columns: 10% 35% 5% 35% 10%;
+  }
+
+  .links {
+    grid-column: 4 / 5;
+  }
 }

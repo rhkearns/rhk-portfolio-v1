@@ -2,8 +2,8 @@ import React from 'react';
 import LILogo from '../../images/siteLogos/LI-In-Bug.png'
 import GHLogo from '../../images/siteLogos/GitHub-Mark-120px-plus.png'
 import headshot from '../../images/headshot/headshot.jpg'
-import envelope from '../../images/siteLogos/Envelope.png'
-import resume from '../../images/siteLogos/Resume.png'
+import envelope from '../../images/siteLogos/Envelope-cropped.png'
+import resume from '../../images/siteLogos/Resume-cropped.png'
 import './contact.css'
 
 const Contact = () => {
