@@ -14,6 +14,7 @@
 .links {
   margin-top: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
   background-color: rgba(255, 255, 255, .795);
@@ -39,13 +40,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
   .contact-section {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: 10% 40% 40% 10%;
     justify-content: center;
-    text-align: center;
   }
   
   .headshot-container {
@@ -54,6 +53,7 @@
   }
   
   .links {
+    padding: 25px 40px 55px 25px;
     grid-column: 3 / 4;
     display: grid;
     grid-template-columns: 50% 50%;
