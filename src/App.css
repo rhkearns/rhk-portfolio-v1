@@ -32,7 +32,8 @@ p {
 }
 
 .projects {
-  margin: 0 100px 100px 100px;
+  margin: 100px;
+  /* width: auto; */
 }
 
 .contact {
