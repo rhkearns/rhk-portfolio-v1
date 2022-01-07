@@ -4,10 +4,22 @@ import Card from 'react-bootstrap/Card'
 import readrs from '../../images/projectThumbnails/readrs.png'
 import boxitup from '../../images/projectThumbnails/boxitup.png'
 import quiz from '../../images/projectThumbnails/quiz.png'
+import bulb from '../../images/projectThumbnails/Folio-bulb.png'
 
 const Projects = () => {
   return (
     <div className='project-list'>
+      <a href='https://folio-front24.herokuapp.com/'>
+        <Card className="card" style={{ width: '18rem' }}>
+          <Card.Img variant='top' src={bulb} className='card-img'/>
+          <Card.Body>
+            <Card.Title className="card-title">Folio</Card.Title>
+            <Card.Text clasName="card-text">
+              A full-stack CRUD app, using React, designed to allow freelancers to track their clients and projects.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </a>
       <a href="https://boxitup-rhk.herokuapp.com/">
         <Card className="card" style={{ width: '18rem' }}>
           <Card.Img variant='top' src={boxitup} className='card-img'/>
