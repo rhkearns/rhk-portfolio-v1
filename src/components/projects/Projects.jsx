@@ -15,7 +15,7 @@ const Projects = () => {
           <Card.Body>
             <Card.Title className="card-title">Folio</Card.Title>
             <Card.Text clasName="card-text">
-              A full-stack CRUD app, using React, designed to allow freelancers to track their clients and projects.
+              A full-stack CRUD app, built with React, designed to allow freelancers to track their clients and projects.
             </Card.Text>
           </Card.Body>
         </Card>
