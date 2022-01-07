@@ -1,4 +1,6 @@
-.fullpage {
+
+.body {
+  content: "";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,10 +8,15 @@
   gap: 100px;
   font-family: 'Rokkitt', serif;
   background-image: url(./images/Bridge-background-v1.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  z-index: -10;
 }
 
 p {

@@ -13,7 +13,7 @@ import react from './images/icons/react.png'
 
 function App() {
   return (
-    <div className='fullpage'>
+    <div className='body'>
       <div className='landing'>
         <h1>Ryan H Kearns</h1>
         <p className="brand-statement">
