@@ -9,7 +9,7 @@ import bulb from '../../images/projectThumbnails/Folio-bulb.png'
 const Projects = () => {
   return (
     <div className='project-list'>
-      <a href='https://folio-front24.herokuapp.com/'>
+      <a href='https://folio-front24.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
           <Card.Img variant='top' src={bulb} className='card-img'/>
           <Card.Body>
@@ -20,7 +20,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
       </a>
-      <a href="https://boxitup-rhk.herokuapp.com/">
+      <a href="https://boxitup-rhk.herokuapp.com/" target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
           <Card.Img variant='top' src={boxitup} className='card-img'/>
           <Card.Body>
@@ -31,7 +31,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
       </a>
-      <a href="https://readrs.herokuapp.com/">
+      <a href="https://readrs.herokuapp.com/" target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
           <Card.Img variant='top' src={readrs} className='card-img'/>
           <Card.Body>
@@ -42,7 +42,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
       </a>
-      <a href="https://quiz-for-the-nerds.netlify.app/">
+      <a href="https://quiz-for-the-nerds.netlify.app/" target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
           <Card.Img variant='top' src={quiz} className='card-img'/>
           <Card.Body>
