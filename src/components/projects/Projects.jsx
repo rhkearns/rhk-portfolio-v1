@@ -11,7 +11,7 @@ const Projects = () => {
     <div className='project-list'>
       <a href='https://folio-front24.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
-          <Card.Img variant='top' src={bulb} className='card-img'/>
+          <Card.Img variant='top' src={bulb} alt='folio thumbnail' className='card-img'/>
           <Card.Body>
             <Card.Title className="card-title">Folio</Card.Title>
             <Card.Text clasName="card-text">
@@ -22,7 +22,7 @@ const Projects = () => {
       </a>
       <a href="https://boxitup-rhk.herokuapp.com/" target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
-          <Card.Img variant='top' src={boxitup} className='card-img'/>
+          <Card.Img variant='top' src={boxitup} alt='boxitup thumbnail' className='card-img'/>
           <Card.Body>
             <Card.Title className="card-title">Box It Up</Card.Title>
             <Card.Text className="card-text">
@@ -33,7 +33,7 @@ const Projects = () => {
       </a>
       <a href="https://readrs.herokuapp.com/" target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
-          <Card.Img variant='top' src={readrs} className='card-img'/>
+          <Card.Img variant='top' src={readrs} alt='readrs thumbnail' className='card-img'/>
           <Card.Body>
             <Card.Title className="card-title">Readrs</Card.Title>
             <Card.Text className="card-text">
@@ -44,7 +44,7 @@ const Projects = () => {
       </a>
       <a href="https://quiz-for-the-nerds.netlify.app/" target='_blank' rel='noopener noreferrer'>
         <Card className="card" style={{ width: '18rem' }}>
-          <Card.Img variant='top' src={quiz} className='card-img'/>
+          <Card.Img variant='top' src={quiz} alt='quiz for the nerds thumbnail' className='card-img'/>
           <Card.Body>
             <Card.Title className="card-title">Quiz for the Nerds</Card.Title>
             <Card.Text className="card-text">
