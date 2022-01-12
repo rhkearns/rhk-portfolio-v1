@@ -11,7 +11,6 @@ const Contact = () => {
     <div className="contact-section">
       <div className='headshot-container'>
         <img src={headshot} alt="Ryan Kearns Headshot" className='headshot'/>
-        {/* <h3>Ryan H Kearns</h3> */}
       </div>
       <div className="links">
         <a href="https://drive.google.com/file/d/1Q093oBEnTF30uBxsiWy0EvILTSbQ72RM/view?usp=sharing" target='_blank' rel='noopener noreferrer'><img src={resume} alt='resume' id="resume-icon"/></a>
