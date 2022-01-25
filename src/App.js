@@ -10,7 +10,7 @@ import javascript from './images/icons/javascript.png';
 import nodejs from './images/icons/nodejs.png';
 import python from './images/icons/python.png';
 import react from './images/icons/react.png';
-import redux from './images/icons/redux.png';
+import redux from './images/icons/reduxLogo.png';
 
 function App() {
 	return (
@@ -34,8 +34,8 @@ function App() {
 					<img src={javascript} alt="javascript" />
 					<img src={nodejs} alt="nodejs" />
 					<img src={react} alt="react" />
-					<img src={python} alt="python" />
 					<img src={redux} alt="redux" />
+					<img src={python} alt="python" />
 				</div>
 			</div>
 			<div className="projects">
