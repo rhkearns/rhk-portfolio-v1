@@ -1,90 +1,98 @@
 @import '../../common/colors.scss';
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .headshot {
-    width: 300px;
-    border: 2px solid darkcyan;
-    border-radius: 25px;
-  }
+	width: 300px;
+	border: 2px solid darkcyan;
+	border-radius: 25px;
+}
 
 .links {
-  margin-top: 15px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  background-color: $background-transparent;
-  border: 2px solid darkcyan;
-  border-radius: 25px;
-  padding: 25px;
+	margin-top: 15px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	background-color: $background-transparent;
+	border: 2px solid darkcyan;
+	border-radius: 25px;
+	padding: 25px;
+}
+
+.icons {
+	transition: all 0.3s;
+
+	&:hover {
+		transform: scale(1.1);
+		transition: all 0.3s;
+	}
 }
 
 #li-logo {
-  width: 115px;
+	width: 115px;
 }
-  
+
 #gh-logo {
-  width: 100px;
+	width: 100px;
 }
 
 #email-icon {
-  width: 100px;
+	width: 100px;
 }
 
 #resume-icon {
-  width: 100px;
+	width: 100px;
 }
 
 @media only screen and (min-width: 650px) {
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
-  }
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 15px;
+	}
 }
 
-
 @media only screen and (min-width: 1024px) {
-  .contact-section {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: 10% 40% 40% 10%;
-    justify-content: center;
-  }
-  
-  .headshot-container {
-    grid-column: 2 / 3;
-    justify-self: center;
-  }
-  
-  .links {
-    padding: 25px 40px 55px 25px;
-    grid-column: 3 / 4;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: 
-      'resume email'
-      'linkedIn github';
-    align-items: center;
-    justify-self: center;
-    grid-gap: 50px;
-  }
+	.contact-section {
+		display: grid;
+		grid-gap: 40px;
+		grid-template-columns: 10% 40% 40% 10%;
+		justify-content: center;
+	}
+
+	.headshot-container {
+		grid-column: 2 / 3;
+		justify-self: center;
+	}
+
+	.links {
+		padding: 25px 40px 55px 25px;
+		grid-column: 3 / 4;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas:
+			'resume email'
+			'linkedIn github';
+		align-items: center;
+		justify-self: center;
+		grid-gap: 50px;
+	}
 }
 
 @media only screen and (min-width: 1420px) {
-  .contact-section {
-    grid-template-columns: 10% 35% 5% 35% 10%;
-  }
+	.contact-section {
+		grid-template-columns: 10% 35% 5% 35% 10%;
+	}
 
-  .links {
-    grid-column: 4 / 5;
-  }
+	.links {
+		grid-column: 4 / 5;
+	}
 }
