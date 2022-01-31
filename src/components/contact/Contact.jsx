@@ -4,7 +4,7 @@ import GHLogo from '../../images/siteLogos/GitHub-Mark-120px-plus.png'
 import headshot from '../../images/headshot/headshot.jpg'
 import envelope from '../../images/siteLogos/Envelope-cropped.png'
 import resume from '../../images/siteLogos/Resume-cropped.png'
-import './contact.css'
+import './contact.scss'
 
 const Contact = () => {
   return (

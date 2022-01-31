@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects.css'
+import './projects.scss'
 import Card from 'react-bootstrap/Card'
 import readrs from '../../images/projectThumbnails/readrs.png'
 import boxitup from '../../images/projectThumbnails/boxitup.png'
