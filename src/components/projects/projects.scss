@@ -1,35 +1,42 @@
 @import '../../common/colors.scss';
 
 .project-list {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 50px;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .card {
-  background-color: $background-transparent;
-  border: 2px solid darkcyan;
-  border-radius: 25px;
-  color: darkcyan;
-  height: 476px;
+	background-color: $background-transparent;
+	border: 2px solid darkcyan;
+	border-radius: 25px;
+	color: darkcyan;
+	height: 476px;
+  width: 18rem;
+	transition: all 0.3s;
+
+	&:hover {
+		transform: scale(1.1);
+		transition: all 0.3s;
+	}
 }
 
 .card-title {
-  font-size: 1.8rem;
-  text-decoration: underline;
+	font-size: 1.8rem;
+	text-decoration: underline;
 }
 
 .card-text {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 .card-img {
-  padding: 10px;
-  border-bottom: 1px solid black;
-  height: 200px;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	height: 200px;
 }
