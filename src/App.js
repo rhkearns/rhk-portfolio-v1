@@ -11,6 +11,7 @@ import nodejs from './images/icons/nodejs.png';
 import python from './images/icons/python.png';
 import react from './images/icons/react.png';
 import redux from './images/icons/reduxLogo.png';
+import sass from './images/icons/sass.png'
 
 function App() {
 	return (
@@ -36,6 +37,7 @@ function App() {
 					<img src={react} alt="react" />
 					<img src={redux} alt="redux" />
 					<img src={python} alt="python" />
+					<img src={sass} alt="sass" />
 				</div>
 			</div>
 			<div className="projects">
