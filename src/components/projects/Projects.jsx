@@ -5,6 +5,7 @@ import readrs from '../../images/projectThumbnails/readrs.png';
 import boxitup from '../../images/projectThumbnails/boxitup.png';
 import quiz from '../../images/projectThumbnails/quiz.png';
 import bulb from '../../images/projectThumbnails/Folio-bulb.png';
+import splitski from '../../images/projectThumbnails/splitski.png'
 
 const Projects = () => {
 	return (
@@ -26,6 +27,27 @@ const Projects = () => {
 						<Card.Text clasName="card-text">
 							A full-stack CRUD app, built with React, designed to allow
 							freelancers to track their clients and projects.
+						</Card.Text>
+					</Card.Body>
+				</Card>
+			</a>
+			<a
+				href="https://splitski.vercel.app/"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Card className="card">
+					<Card.Img
+						variant="top"
+						src={splitski}
+						alt="splitski thumbnail"
+						className="card-img"
+					/>
+					<Card.Body>
+						<Card.Title className="card-title">Splitski</Card.Title>
+						<Card.Text clasName="card-text">
+							A full-stack CRUD app, built with React during a three-day hackathon,
+							deisgned to allow the user to divide costs for events.
 						</Card.Text>
 					</Card.Body>
 				</Card>
