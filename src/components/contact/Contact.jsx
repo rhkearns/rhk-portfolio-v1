@@ -14,7 +14,7 @@ const Contact = () => {
 			</div>
 			<div className="links">
 				<a
-					href="https://drive.google.com/file/d/1sZk5dnf_b8_w5R7l0NzjIpcjWWXmeA4m/view?usp=sharing"
+					href="https://drive.google.com/file/d/1Fl5m8k_4VL5zhK-CnV9Rb9Ps6zdyLGJ3/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
