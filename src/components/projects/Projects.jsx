@@ -1,120 +1,52 @@
 import React from 'react';
 import './projects.scss';
+import projectData from './projectData';
 import Card from 'react-bootstrap/Card';
 import readrs from '../../images/projectThumbnails/readrs.png';
 import boxitup from '../../images/projectThumbnails/boxitup.png';
 import quiz from '../../images/projectThumbnails/quiz.png';
 import folio from '../../images/projectThumbnails/Folio-bulb.png';
-import splitski from '../../images/projectThumbnails/splitski.png'
+import splitski from '../../images/projectThumbnails/splitski.png';
+import streamlined from '../../images/projectThumbnails/streamlined.png';
 
 const Projects = () => {
+	const findImage = image => {
+		switch (image) {
+			case 'streamlined':
+				return streamlined;
+			case 'folio':
+				return folio;
+			case 'splitski':
+				return splitski;
+			case 'boxitup':
+				return boxitup;
+			case 'readrs':
+				return readrs;
+			case 'quiz':
+				return quiz;
+			default:
+				break;
+		}
+	};
+
 	return (
 		<div className="project-list">
-			<a
-				href="https://folio-front24.herokuapp.com/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Card className="card">
-					<Card.Img
-						variant="top"
-						src={folio}
-						alt="folio thumbnail"
-						className="card-img"
-					/>
-					<Card.Body>
-						<Card.Title className="card-title">Folio</Card.Title>
-						<Card.Text clasName="card-text">
-							A full-stack CRUD app, built with React, designed to allow
-							freelancers to track their clients and projects.
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</a>
-			<a
-				href="https://splitski.vercel.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Card className="card">
-					<Card.Img
-						variant="top"
-						src={splitski}
-						alt="splitski thumbnail"
-						className="card-img"
-					/>
-					<Card.Body>
-						<Card.Title className="card-title">Splitski</Card.Title>
-						<Card.Text clasName="card-text">
-							A full-stack CRUD app, built with React during a three-day hackathon,
-							deisgned to allow the user to divide costs for events.
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</a>
-			<a
-				href="https://boxitup-rhk.herokuapp.com/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Card className="card">
-					<Card.Img
-						variant="top"
-						src={boxitup}
-						alt="boxitup thumbnail"
-						className="card-img"
-					/>
-					<Card.Body>
-						<Card.Title className="card-title">Box It Up</Card.Title>
-						<Card.Text className="card-text">
-							A full-stack CRUD app, using Python with the Django web framework,
-							designed to help movers keep track of their many boxes.
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</a>
-			<a
-				href="https://readrs.herokuapp.com/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Card className="card">
-					<Card.Img
-						variant="top"
-						src={readrs}
-						alt="readrs thumbnail"
-						className="card-img"
-					/>
-					<Card.Body>
-						<Card.Title className="card-title">Readrs</Card.Title>
-						<Card.Text className="card-text">
-							A full-stack CRUD app, using the MEN Stack, designed to let book
-							lovers sort and catagorize their books.
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</a>
-			<a
-				href="https://quiz-for-the-nerds.netlify.app/"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Card className="card">
-					<Card.Img
-						variant="top"
-						src={quiz}
-						alt="quiz for the nerds thumbnail"
-						className="card-img"
-					/>
-					<Card.Body>
-						<Card.Title className="card-title">Quiz for the Nerds</Card.Title>
-						<Card.Text className="card-text">
-							A simple quiz game designed to test nerds on their knowledge of
-							the most popular franchises, using vanilla JavaScript.
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</a>
+			{projectData.map(project => (
+				<a href={project.link} target="_blank" rel="noopener noreferrer">
+					<Card className="card">
+						<Card.Img
+							variant="top"
+							src={findImage(project.image)}
+							alt={project.imageLabel}
+							className="card-img"
+						/>
+						<Card.Body>
+							<Card.Title className="card-title">{project.title}</Card.Title>
+							<Card.Text className="card-text">{project.description}</Card.Text>
+						</Card.Body>
+					</Card>
+				</a>
+			))}
 		</div>
 	);
 };
