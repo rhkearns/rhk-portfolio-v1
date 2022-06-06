@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import readrs from '../../images/projectThumbnails/readrs.png';
 import boxitup from '../../images/projectThumbnails/boxitup.png';
 import quiz from '../../images/projectThumbnails/quiz.png';
-import bulb from '../../images/projectThumbnails/Folio-bulb.png';
+import folio from '../../images/projectThumbnails/Folio-bulb.png';
 import splitski from '../../images/projectThumbnails/splitski.png'
 
 const Projects = () => {
@@ -18,7 +18,7 @@ const Projects = () => {
 				<Card className="card">
 					<Card.Img
 						variant="top"
-						src={bulb}
+						src={folio}
 						alt="folio thumbnail"
 						className="card-img"
 					/>
